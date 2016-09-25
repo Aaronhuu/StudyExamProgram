@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center|top"
+    tools:context=".BookActivity"
+    android:background="#f0efef">
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Space
+                android:layout_width="20px"
+                android:layout_height="30dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Course Title"
+                android:id="@+id/courseTitle"
+                android:layout_gravity="center_horizontal"
+                android:textSize="30dp"
+                android:textColor="#2b9fff" />
+
+            <Space
+                android:layout_width="20px"
+                android:layout_height="30dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Loading......Please Wait"
+                android:id="@+id/courseContent"
+                android:layout_gravity="center_horizontal" />
+
+            <Space
+                android:layout_width="20px"
+                android:layout_height="72dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="Finish"
+            android:id="@+id/button4"
+            android:background="#b45a4bfa"
+            android:textColor="#ffffff"
+            android:textSize="30dp"
+            android:onClick="FinishClick" />
+    </LinearLayout>
+</RelativeLayout>
